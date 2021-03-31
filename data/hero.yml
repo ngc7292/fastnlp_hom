@@ -1,0 +1,9 @@
+---
+enable: true
+content: >
+  # FastNLP
+
+  一款轻量级的自然语言处理（NLP）工具包
+buttonName: Try it now
+buttonURL: https://github.com/fastnlp/fastNLP
+image: images/fastnlp/logo-fastnlp.png

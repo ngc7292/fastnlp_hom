@@ -1,0 +1,23 @@
+---
+enable: true
+title: About Me
+breadcrumb: 相关开发人员
+
+
+leaders:
+  - name: xipengQiu
+    url: https://xpqiu.github.io/
+    content: >
+      于复旦大学获得理学学士和博士学位。研究方向为自然语言处理、深度学习，发表CCF-A/B类论文70余篇。主持开发了开源自然语言处理工具FudanNLP 、FastNLP，获得了学术界和产业界的广泛使用。指导学生曾获中国中文信息学会优博1次、中国人工智能学会优博1次、微软学者1次、百度奖学金1次、上海市计算机学会优博提名1次。
+    image_url: https://xpqiu.github.io/xpqiu.jpg 
+
+peoples:
+  - name: hangYan
+    url: 
+    image_url: /images/fastnlp/member/hangYan.png
+  - name: yunfanSao
+    url: 
+    image_url: /images/fastnlp/member/yunfanSao.png
+  - name: yiningZheng
+    url: 
+    image_url: /images/fastnlp/member/yiningZheng.png

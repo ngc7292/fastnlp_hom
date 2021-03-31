@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+{{ with .Site.Data.aboutMe }}
+
+<header class="breadCrumb">
+	<div class="container">
+		<div class="row">
+	      <div class="col-12 text-center">
+	        <h3 class="breadCrumb__title">{{ .title }}</h3>
+	        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+	          <ol class="breadcrumb align-items-center">
+	            <li class="breadcrumb-item"><a href="/">Home</a></li>
+	            <li class="breadcrumb-item active" aria-current="page">{{ .breadcrumb }}</li>
+	          </ol>
+	        </nav>
+	      </div>
+	 	</div>
+	 </div>
+</header>
+<section class="section" id="blog">
+	<div class="container">
+		<h3>Leader</h3>
+		<div class="row" >
+			{{ $Section := .leaders}}
+			{{ range $Section }}
+			<div class="col-lg-4" style="margin-bottom: 100px">
+				<div class="blog-preview__item">
+					<div class="blog-preview__item-thumb">
+						<img src="{{ .image_url }}" alt="post-image">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6" >
+				<div class="mb-5">
+					<span class="top-title pre-line">{{ .name }}</span>
+                        {{ .content | markdownify }}	
+				</div>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+	<div class="container">
+		<h4>Members</h4>
+		<div class="row" >
+			{{ $Section := .peoples}}
+			{{ range $Section }}
+			<div class="col-lg-3" style="margin-bottom: 100px">
+				<div class="blog-preview__item">
+					<div class="blog-preview__item-thumb">
+						<img src="{{ .image_url }}" alt="post-image">
+					</div>
+					<div class="blog-preview__item-content bg-white">
+						<h5 class="mb-0">
+							<a class="text-dark" href="{{ .url }}">{{ .name }}</a>
+						</h5>
+					</div>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ end }}
+
+{{ end }}

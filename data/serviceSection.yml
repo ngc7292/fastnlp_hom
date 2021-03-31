@@ -1,0 +1,33 @@
+---
+enable: true
+topTitle: Why choose fastNLP ?
+title: >
+  ## 选择fastNLP的5个理由
+
+service:
+  - content: >
+      #### 统一的数据容器 
+
+      统一的Tabular式数据容器，简化数据预处理过程
+    image: images/service/ui-ux.svg
+  - content: >
+      #### 内置多种数据集
+
+      内置多种数据集的Loader和Pipe，省去预处理代码
+    image: images/service/web.svg
+  - content: >
+      #### 各种方便的NLP工具
+
+      各种方便的Embedding加载（包括ELMo和BERT）、中间数据cache等，部分数据集与预训练模型的自动下载
+    image: images/service/creative.svg
+  - content: >
+      #### 开箱即用的nlp工具箱
+
+      提供多种神经网络组件以及复现模型（涵盖中文分词、命名实体识别、句法分析、文本分类、文本匹配、指代消解、摘要等任务）
+    image: images/service/branding.svg
+  - content: >
+      #### 简单易上手
+
+      Trainer提供多种内置Callback函数，方便实验记录、异常捕获等。
+    image: images/service/branding.svg
+
